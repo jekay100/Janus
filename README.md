@@ -1,5 +1,4 @@
 #Janus
----
 
 猎上前端规范&amp;架构
 
@@ -13,7 +12,9 @@
 
 ### 最佳实践
 
-
+* [HTML最佳实践](https://github.com/HunterOn-Ued/Janus/blob/master/docs/HTML.bp.md)
+* [CSS最佳实践](https://github.com/HunterOn-Ued/Janus/blob/master/docs/CSS.bp.md)
+* [JAVASCRIPT最佳实践](https://github.com/HunterOn-Ued/Janus/blob/master/docs/JS.bp.md)
 
 ##问题的提交
 
