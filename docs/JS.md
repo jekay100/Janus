@@ -1,37 +1,10 @@
 # 书写具备一致风格、通俗易懂 JavaScript 的原则
-
+## From [idiomatic.js](https://github.com/rwaldron/idiomatic.js)
 ## 这是一份用来改进我们代码，以让其总是让人喜爱的持续更新的文档（living document）和新思想。参与构建：（请）fork、clone、branch、commit、push、pull、pull request。
-
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
-* Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
-* Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
-* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
-* Raynos  [github](https://github.com/Raynos)
-* Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
-* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
-* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
-* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
-* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
-* Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
-* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
-* EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
-* Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
-* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
-* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
-* Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
-* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
-* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
-* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
-* Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
-* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
-
 
 ## 无论有多少人在维护，所有在代码仓库中的代码理应看起来像同一个人写的。
 
-### 下面的清单概括了我作为原作者的所有代码中使用的实践。在我创建的项目中的所有构建代码都必须遵循这些规则。
-
-### 我并不想强制别人在其代码或项目中使用我个人所偏好的代码风格；如果已经存在一个通用编码规范，它必须受到尊崇。
+### 如果已经存在一个通用编码规范，它必须受到尊崇。
 
 
 > ### "对风格的挑刺毫无意义可言。它们必须是指导原则，且你必须遵循。"
@@ -41,22 +14,6 @@
 
 > ### "成为一个优秀的成功项目管理者的一个条件是，明白按自己的偏好风格写代码是非常不好的做法。如果成千上万的人都在使用你的代码，那么请尽可能通俗易懂地写出你的代码，而非在规范之下自作聪明地使用自己偏好的风格。"
 >_Idan_ _Gazit_
-
-## 翻译版本
-
-* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
-* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
-* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
-* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 ## 重要，非常通用资源：
 
