@@ -72,3 +72,16 @@ HTML标签是构造规范内容结构的关键。例如，`<em>`标签用来强�
 <meta name="date" content="1994-11-06T08:49:37+00:00">
 <meta name="description" content="Best practice for html"/>
 ```
+
+##表签名使用小写
+```html
+<!--bad-->
+<DIV>
+<P>Here's an interesting fact about corn. </P>
+</DIV>
+
+<!--good-->
+<div>
+<p>Here's an interesting fact about corn. </p>
+</div>
+```
