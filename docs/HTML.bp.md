@@ -63,6 +63,14 @@ HTML标签是构造规范内容结构的关键。例如，`<em>`标签用来强�
 <img id="logo" src="images/bgr_logo.png" alt="Anson Cheung - Web Development" />
 ```
 
+##适当的添加title属性
+```html
+<!--bad-->
+<a href="javascript:;">查看候选人张…</a>
+
+<!--good-->
+<a href="javascript:;" title="查看候选人张三的简历">查看候选人张…</a>
+
 ##给页面添加必要的meta
 ```html
 <!--good-->
@@ -73,7 +81,7 @@ HTML标签是构造规范内容结构的关键。例如，`<em>`标签用来强�
 <meta name="description" content="Best practice for html"/>
 ```
 
-##表签名使用小写
+##标签名使用小写
 ```html
 <!--bad-->
 <DIV>
