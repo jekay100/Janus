@@ -62,3 +62,12 @@ HTML标签是构造规范内容结构的关键。例如，`<em>`标签用来强�
 <!--good-->
 <img id="logo" src="images/bgr_logo.png" alt="Anson Cheung - Web Development" />
 
+##给页面添加必要的meta
+```html
+<!--good-->
+<meta name="author" content="John Doe">
+<meta name="copyright" content="&copy; 1997 Acme Corp.">
+<meta name="keywords" content="corporate,guidelines,cataloging">
+<meta name="date" content="1994-11-06T08:49:37+00:00">
+<meta name="description" content="Best practice for html"/>
+```
