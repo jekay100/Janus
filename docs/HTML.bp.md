@@ -4,16 +4,47 @@
 ##保持标签闭合
 
 ```
-\<!--bad-->
+<!--bad-->
+<li>Some text here.  
+<li>Some new text here.  
+<li>You get the idea.
 
-\<li>Some text here.  
-\<li>Some new text here.  
-\<li>You get the idea.
+<!--good-->
+<ul>  
+	<li>Some text here. </li>  
+	<li>Some new text here. </li>  
+	<li>You get the idea. </li>  
+</ul> 
+```
+##不要使用内联样式
 
-\<!--good-->
+```
+<!--bad-->
+<p style="color: #CCC; font-size:16px; font-family: arial">An example to illustrate inline style in html</p>
 
-\<ul>  
-  \<li>Some text here. </li>  
-  \<li>Some new text here. </li>  
-  \<li>You get the idea. </li>  
-\</ul> 
+<!--good-->
+<p class="html_bp">An example to illustrate inline style in html</p>
+.html_bp{
+	color:#CCC;
+	font-size:16px;
+	font-family: arial;
+}
+
+<!--bad-->
+
+<!--good-->
+```
+
+##使用连续的标题
+
+```
+<!--bad-->
+<h1>This is the topmost heading</h1>
+<h3>This is a sub-heading underneath the topmost heading</h3>
+
+<!--good-->
+<h1>This is the topmost heading</h1>
+<h2>This is a sub-heading underneath the topmost heading</h2>
+
+
+```
