@@ -28,10 +28,6 @@
 	font-size:16px;
 	font-family: arial;
 }
-
-<!--bad-->
-
-<!--good-->
 ```
 
 ##使用连续的标题
@@ -52,9 +48,17 @@ HTML标签是构造规范内容结构的关键。例如，`<em>`标签用来强�
 <!--bad-->
 <p>段落一内容<br/>
     段落二内容</p>
+
 <!--good-->
 <p>段落一内容</p>
 </p>段落二内容</p>
 ```
 
-##
+##为图片标签添加alt属性
+```html
+<!--bad-->
+<img id="logo" src="images/bgr_logo.png" />
+
+<!--good-->
+<img id="logo" src="images/bgr_logo.png" alt="Anson Cheung - Web Development" />
+
