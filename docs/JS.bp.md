@@ -1,33 +1,25 @@
-##Make It Understandable
-变量和函数选择容易理解，较短的单词命名
+#JavaScript最佳实践
+##目录
+* 避免糟粕和鸡肋
+* 良好的编码习惯
+* 更为优雅的方式
 
-###不好的变量名
-`x1 fe2 bqne`
+##避免糟粕和鸡肋
+糟粕：JS的一些存在问题却难以避免的功能特性
+鸡肋：JS还存在一些有问题的特性，但我们很容易避过他们
 
-`incrementerForMainLoopWhichSpansFromTenToTwenty`
+###全局变量
 
-`createNewMemberIfAgeOverTwentyOneAndMoonIsFull`
-###好的变量名
-`isLegalAge()`
+全局变量和全局函数是非常糟糕的。因为在一个页面中包含的所有JavaScript都在同一个域中运行。
+所以如果你的代码中声明了全局变量或者全局函数的话，
+后面的代码中载入的脚本文件中的同名变量和函数会覆盖掉（overwrite）你的全局变量。
 
-###避免全局变量
-全局变量是魔鬼
-原因：其他的JavaScript代码随时会覆盖你的代码
-问题：所有全局变量都可以被访问；访问不受控制，页面任何东西都可以被覆盖
+>**解决方式**
+
+>最小全局变量(Minimizing Globals)
+JavaScript通过函数管理作用域。在函数内部声明的变量只在这个函数内部，函数外面不可用。
+另一方面，全局变量就是在任何函数外面声明的或是未声明直接简单使用的。
 ```
-var current = null;
-var labels = {
-	'home': 'home',
-	'articles': 'articles',
-	'contact': 'contact'
-};
-function init() {
-	
-};
-function show() {
-	current = 1;
-};
-function hide() {
-	show();
-};
+var globa = {};
+var globa = function(){}
 ```
