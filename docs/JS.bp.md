@@ -185,7 +185,7 @@ typeof "98.23"; /*string*/
 
 typeof function{} /* function */
 
-/*好吧，上面这些都是正常的*/
+/*好吧，上面这些都是正常的, 让人哭B的下面这些，什么和什么呀· */
 
 typeof [1,2]; /*object*/
 
@@ -193,7 +193,25 @@ typeof null; /*object*/
 
 typeof NaN; /*number*/
 
+```
+>**解决方式**
 
+>需要自定文件类型方法，常用有 isArray, isFunction 等
+>Object.prototype.toString.apply( t )
+
+### for in
+
+for in 语句可以用来遍历对象的所有属性的名字，
+糟糕的是它也可以遍历所有从原型链中继承而来的成员元素，这并不是我们想要的
+
+>**解决方式**
+
+```
+for( var item in t ){
+    if( t.hasOwnProperty( item ) ){
+         
+    }
+}
 ```
 
 
