@@ -154,9 +154,47 @@ continue 语句会跳到循环顶部，如果一段代码通过重构移除conti
 看起来都是高大尚的代码，虽然JS都支持，但不易理解
 如果不是进行算法编程，建议不要使用它，看着头晕...
 
+### 小数的计算
+数值是浮点数，所以...
+0.3 - 0.2 != 0.1
+ 
+>**解决方式**
+
+>将小数转为整数计算
+
+### NaN
+
+NaN是比undefined更为特殊的一个值
+
+NaN和undefined一样，是个全局变量而不是常量，它可以被赋值
+
+NaN != NaN，NaN 不等于任何值，包括自己
+
+typeof NaN == "number", 但 NaN 并不是一个数字
+
+isNaN 用来判断是否为NaN； 但令人蛋疼的 isNaN("string") 的返回值是 true
+
+### typeof
+
+typeof 是个运算符， 返回运算数类型的字符串
+
+```
+typeof "这是一个字符串"; /*string*/
+
+typeof "98.23"; /*string*/
+
+typeof function{} /* function */
+
+/*好吧，上面这些都是正常的*/
+
+typeof [1,2]; /*object*/
+
+typeof null; /*object*/
+
+typeof NaN; /*number*/
 
 
-
+```
 
 
 
