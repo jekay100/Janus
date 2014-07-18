@@ -95,3 +95,30 @@ h1, h2, h3, h4, h5, h6{
   font-weight: normal;
 }
 ```
+##避免写兼容某个浏览器的css代码
+避免写特定浏览器兼容代码，这里说的特定浏览器主要指的是万恶的IE系列浏览器，IE6，7尤为严重。碰到浏览器兼容问题，首先考虑的是能否换一种其它的解决方案，如果没有合适的解决方案，记得单独写一个css文件给这些特定的浏览器，不要把兼容代码和常规代码混合，这样方便代码的维护，如果后期不支持这些老旧浏览器，可以直接删除这些单独的css文件即可。
+```css
+/*bad*/
+.bb{
+height:32px;
+background-color:#f1ee18;/*所有识别*/
+.background-color:#00deff\9; /*IE6、7、8识别*/
++background-color:#a200ff;/*IE6、7识别*/
+_background-color:#1e0bd1;/*IE6识别*/
+}
+```
+```html
+<!--good-->
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="css/ie7.css" />
+<![endif]-->
+```
+
+
+
+
+
+
