@@ -221,20 +221,11 @@ div{
           border-radius: 5px;
 }
 
-.btn-large [class^="icon-"] {
-  margin-top: 1px;
-}
-
 .btn-small {
   padding: 5px 9px;
   font-size: 11px;
   line-height: 16px;
 }
-
-.btn-small [class^="icon-"] {
-  margin-top: -1px;
-}
-
 .btn-mini {
   padding: 2px 6px;
   font-size: 11px;
