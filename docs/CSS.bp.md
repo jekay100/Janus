@@ -130,7 +130,7 @@ abbr,acronym {
 .bb{
 height:32px;
   background-color:#f1ee18;/*所有识别*/
-  .background-color:#00deff\9; /*IE6、7、8识别*/
+  .background-color:#00deff9; /*IE6、7、8识别*/
   +background-color:#a200ff;/*IE6、7识别*/
   _background-color:#1e0bd1;/*IE6识别*/
 }
