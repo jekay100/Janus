@@ -85,14 +85,42 @@ text-indent: 2em;
 全局重设可以确保一个网站在所有浏览器保持统一的外观。完全不一样的浏览器会在一个网站上应用自己的默认设置，这可能导致一个网站在不同的浏览器有不同的界面表现.
 ```css
 /*bad*/
-*{
+p{
   margin: 0;
   padding: 0;
 }
 /*good*/
-h1, h2, h3, h4, h5, h6{
-  font-size: 100%;
-  font-weight: normal;
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0; 
+} 
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+} 
+fieldset,img { 
+    border: 0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+ol,ul { 
+    list-style: none; 
+} 
+caption,th { 
+    text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal; 
+    font-size: 100%; 
+} 
+q:before,q:after { 
+    content:”; 
+} 
+abbr,acronym { 
+    border: 0; 
 }
 ```
 ##避免写兼容某个浏览器的css代码
