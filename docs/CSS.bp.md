@@ -198,7 +198,7 @@ div{
      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-在此基础上定义各种按钮的特定样式
+/*在此基础上定义各种按钮的特定样式*/
 
 .btn.disabled,
 .btn[disabled] {
