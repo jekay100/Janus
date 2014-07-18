@@ -2,7 +2,6 @@
 
 # 书写具备一致风格、通俗易懂 JavaScript 的原则
 
-这是一份用来改进我们代码，以让其总是让人喜爱的持续更新的文档（living document）和新思想。参与构建：（请）fork、clone、branch、commit、push、pull、pull request。
 
 无论有多少人在维护，所有在代码仓库中的代码理应看起来像同一个人写的。
 
@@ -93,6 +92,7 @@
       - 去掉行末的空格
       - 去掉空行的空格
       - 提交和对比更具可读性
+  - 使用[Editorconfig](editorconfig.org)来为你设置空白
 
 
 2. <a name="spacing">美化语法</a>
