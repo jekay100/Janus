@@ -57,30 +57,6 @@ margin: .8em;
 background: #00FF00 url(bgimage.gif) no-repeat fixed top;
 ```
 
-##css代码的格式
-漂亮统一的代码格式可以提高代码的可读性和可维护性，css的最佳代码格式主要有以下几点：定义顺序以字母序排列，不考虑浏览器前缀；定义以分号结束；属性名称定义的分号后添加一个空格。
-
-```css
-/*bad*/
-background: fuchsia;
-border-radius: 4px;
-border: 1px solid;
--moz-border-radius:4px;
-text-align: center;
-text-indent:2em;
--webkit-border-radius: 4px;
-color: black
-/*good*/
-background: fuchsia;
-border: 1px solid;
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
-border-radius: 4px;
-color: black;
-text-align: center;
-text-indent: 2em;
-```
-
 ##重设(reset)
 全局重设可以确保一个网站在所有浏览器保持统一的外观。完全不一样的浏览器会在一个网站上应用自己的默认设置，这可能导致一个网站在不同的浏览器有不同的界面表现.
 ```css
