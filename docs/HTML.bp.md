@@ -94,3 +94,18 @@ HTML标签是构造规范内容结构的关键。例如，`<em>`标签用来强�
 <p>Here's an interesting fact about corn. </p>
 </div>
 ```
+
+## 不要滥用<br />
+```html
+<!--bad-->
+<span>abcde</span>
+<br />
+<em>def</em>
+
+
+<!--good-->
+<p>
+Here's an interesting fact about corn. 
+<br /> u a right;
+</p>
+```
