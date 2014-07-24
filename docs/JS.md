@@ -5,12 +5,14 @@
 
 ### 将你的代码写在闭包里（匿名函数），并对undefined进行处理; 并采用严格模式
 
-###javascript
-    (function( window, ng, undefined ){
-        'use strict';
-           
-    })( window, angular );
-###
+```javascript
+
+(function( window, ng, undefined ){
+    'use strict';
+       
+})( window, angular );
+    
+```
 
 ### 注释
 
@@ -19,7 +21,8 @@
 * 单行注释放在表达式上面（不要放在后面）
 * 如果业务逻辑复杂，可在方法最前面说明逻辑步骤
 
-###
+```javascript
+
     /**
      * isEmpty( Object obj )
      * 判断对象是否为空
@@ -44,7 +47,8 @@
         var type = typeof obj;
         
     };
-###
+
+```
 
 ### 结尾“;”
 
@@ -55,7 +59,9 @@
 起始“{”紧跟表达式后面，不要单起一行;
 
 结束 “}”要另起一行（不包括其他符号"],)"）
-###
+
+```javascript
+
     /*bad*/
     
     if ( condition )
@@ -66,11 +72,13 @@
     if( condition ){
         statements;
     }
-###
+    
+```
 
 不能省略{}, 即使再简单的代码
 
-###
+```javascript
+
     /*bad*/
     if( condition )
         statements; 
@@ -79,7 +87,8 @@
     if( condition ){
         statements; 
     }
-###
+    
+```
 
 
 
@@ -99,7 +108,8 @@
 
 在运算符后换行可以减少因为复制粘贴产生的错误被分号掩盖的几率。下一行应该缩进8个空格。
 
-###
+```javascript
+
     /*bad*/
     if( condition ){
     statements;
@@ -109,7 +119,8 @@
     if( condition ){
         statements;
     }
-###
+    
+```
 
 ### 引号
 
@@ -118,23 +129,27 @@
 ### 各种空格
 
 >条件语句后空格
-
 >```javascript
-if ( true ){
-    //...
-}
+
+    if ( true ){
+        //...
+    }
+    
 ```
 
-* "(" 右空格，"）" 左空格
-###
+>"(" 右空格，"）" 左空格
+>```javascript
+
     /*bad*/
     if (true)
     
     /*good*/
     if ( true )
-###    
-* "{" 紧贴着“）”； "}" 前面空格或换行(与表达式头字母对齐)
-###
+    
+```    
+
+> "{" 紧贴着“）”； "}" 前面空格或换行(与表达式头字母对齐)
+>```javascript
     /*bad*/
     if ( true ) {
         //...}
@@ -149,9 +164,11 @@ if ( true ){
     return {
         //...
     };
-###    
-* "," 后空格，前紧贴
-###
+``` 
+ 
+>"," 后空格，前紧贴
+>```javascript
+
     /*bad*/
     var abc = function( a,b,c ){
         //...
@@ -165,9 +182,12 @@ if ( true ){
     };
      
     var a, b, c;
- ###   
-* ":" 后空格，前紧贴
-###
+    
+```
+    
+>":" 后空格，前紧贴
+>```javascript
+
     /*bad*/
     var obj = {
         'a':1,
@@ -179,11 +199,11 @@ if ( true ){
         'a': 1,
         'b': 2
     }
-###
     
-* ";" 紧贴无空格
-
-###
+```
+    
+>";" 紧贴无空格
+>```javascript
 
     /*bad*/
     var abc = function( a, b, c ){
@@ -199,11 +219,12 @@ if ( true ){
     
     var a, b, c;
     
- ###
+```
     
-* 运算符，比较符，赋值符 前后空格
+>运算符，比较符，赋值符 前后空格
 
-###
+>```javascript
+
     /*bad*/
     var a=1;
     if( a==1 ){
@@ -215,11 +236,13 @@ if ( true ){
     if( a == 1 ){
         a = a + 1;
     }
-###
+    
+```
 
 ### "," 行末逗号
 
-###
+```javascript
+
     /*bad*/
     var a = 1
       , b = 2
@@ -241,22 +264,32 @@ if ( true ){
         'b': 2, 
         'c': 3
     };
-###
+    
+```
 
 ### 参数赋值，单起一行
 
-###
+```javascript
+
     /*bad*/
-    var a, b = 1, c;
+    var a, b = 1, c, d = 2;
     
     /*good*/
     var a, c,
-        b = 1;
-###
+        b = 1
+        d = 2;
+        
+    /*btter*/
+    var a, c;
+    var b = 1,
+        d = 2;
+        
+```
     
 ### 请习惯用（）表示运算的正确顺序
 
-###
+```javascript
+
     /*bad*/
     5 || false == 5
     
@@ -266,7 +299,8 @@ if ( true ){
     5 || ( false == 5 )
     
     var a = 6 + ( + new Date() );
-###    
+    
+```   
 
 
 ## 编码规范
