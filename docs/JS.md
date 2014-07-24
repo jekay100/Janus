@@ -18,30 +18,30 @@
 
 ···
 
-/**
- * isEmpty( Object obj )
- * 判断对象是否为空
- * @params obj
- */
- 
- /** 
-    ex.(示例)
-    isEmpty( [] ) => true
-  */
-  
-var isEmpty = function( /*Object*/ obj ){
     /**
-     * 1. 判断基本类型
-     * 2. 如果为数组或空对象则为 true
-     * 3. 0 也为 true
-     * 4. 字符串长度为0 true
-     * 5. null 或 Nan 或 undefined 为 true
+     * isEmpty( Object obj )
+     * 判断对象是否为空
+     * @params obj
      */
-
-    //判断对象类型
-    var type = typeof obj;
+     
+    /** 
+        ex.(示例)
+        isEmpty( [] ) => true
+     */
+      
+    var isEmpty = function( /*Object*/ obj ){
+        /**
+         * 1. 判断基本类型
+         * 2. 如果为数组或空对象则为 true
+         * 3. 0 也为 true
+         * 4. 字符串长度为0 true
+         * 5. null 或 Nan 或 undefined 为 true
+         */
     
-};
+        //判断对象类型
+        var type = typeof obj;
+        
+    };
 
 ···
 
@@ -54,13 +54,14 @@ var isEmpty = function( /*Object*/ obj ){
 起始“{”紧跟表达式后面，不要单起一行;
 结束 “}”要另起一行（不包括其他符号"],)"）
 
-```
-/*bad */
+```javascript
+
+/*bad*/
 
 if ( condition )
 { statements; }
 
-/*good */
+/*good*/
 
 if( condition ){
     statements;
