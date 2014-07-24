@@ -1,22 +1,24 @@
 #JavaScript程序编码规范
 
+##书写规范
+-----------
+
 ### 将你的代码写在闭包里，并对undefined进行处理; 并采用严格模式
 
-```
-(function( window, ng, undefined ){
-    'use strict';
-       
-})( window, angular );
-````
+    ```
+    (function( window, ng, undefined ){
+        'use strict';
+           
+    })( window, angular );
+    ````
 
 ### 注释
 
-*对方法或类，必须要有注释（ jsdoc 注释方式 ）
-*方法最好有示例
-*单行注释放在表达式上面（不要放在后面）
-*如果业务逻辑复杂，可在方法最前面说明逻辑步骤
+* 对方法或类，必须要有注释（ jsdoc 注释方式 ）
+* 方法最好有示例
+* 单行注释放在表达式上面（不要放在后面）
+* 如果业务逻辑复杂，可在方法最前面说明逻辑步骤
 
-···
 
     /**
      * isEmpty( Object obj )
@@ -43,7 +45,6 @@
         
     };
 
-···
 
 ### 结尾“;”
 
@@ -54,19 +55,16 @@
 起始“{”紧跟表达式后面，不要单起一行;
 结束 “}”要另起一行（不包括其他符号"],)"）
 
-```javascript
-
-/*bad*/
-
-if ( condition )
-{ statements; }
-
-/*good*/
-
-if( condition ){
-    statements;
-}
-···
+    /*bad*/
+    
+    if ( condition )
+    { statements; }
+    
+    /*good*/
+    
+    if( condition ){
+        statements;
+    }
 
 
 
