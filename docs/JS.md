@@ -5,7 +5,7 @@
 
 ### 将你的代码写在闭包里（匿名函数），并对undefined进行处理; 并采用严格模式
 
-###
+###javascript
     (function( window, ng, undefined ){
         'use strict';
            
