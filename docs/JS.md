@@ -142,8 +142,9 @@ JavaScript程序编码规范
 ```
 >
 
->"(" 右空格，"）" 左空格
->```javascript
+* "(" 右空格，"）" 左空格
+
+```javascript
 
     /*bad*/
     if (true)
@@ -151,10 +152,12 @@ JavaScript程序编码规范
     /*good*/
     if ( true )
     
->```    
+```    
 
-> "{" 紧贴着“）”； "}" 前面空格或换行(与表达式头字母对齐)
->```javascript
+* "{" 紧贴着“）”； "}" 前面空格或换行(与表达式头字母对齐)
+
+```javascript
+
     /*bad*/
     if ( true ) {
         //...}
@@ -171,8 +174,9 @@ JavaScript程序编码规范
     };
 ``` 
  
->"," 后空格，前紧贴
->```javascript
+* "," 后空格，前紧贴
+
+```javascript
 
     /*bad*/
     var abc = function( a,b,c ){
@@ -190,8 +194,9 @@ JavaScript程序编码规范
     
 ```
     
->":" 后空格，前紧贴
->```javascript
+* ":" 后空格，前紧贴
+
+```javascript
 
     /*bad*/
     var obj = {
@@ -207,8 +212,9 @@ JavaScript程序编码规范
     
 ```
     
->";" 紧贴无空格
->```javascript
+* ";" 紧贴无空格
+
+```javascript
 
     /*bad*/
     var abc = function( a, b, c ){
@@ -226,9 +232,9 @@ JavaScript程序编码规范
     
 ```
     
->运算符，比较符，赋值符 前后空格
+* 运算符，比较符，赋值符 前后空格
 
->```javascript
+```javascript
 
     /*bad*/
     var a=1;
