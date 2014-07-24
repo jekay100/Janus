@@ -40,7 +40,7 @@ var isEmpty = function( /*Object*/ obj ){
 
     //判断对象类型
     var type = typeof obj;
-    ...
+    
 };
 
 ···
