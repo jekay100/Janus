@@ -1,6 +1,7 @@
 #JavaScript程序编码规范
 
 ### 将你的代码写在闭包里，并对undefined进行处理; 并采用严格模式
+
 ```
 (function( window, ng, undefined ){
     'use strict';
@@ -16,14 +17,18 @@
 *如果业务逻辑复杂，可在方法最前面说明逻辑步骤
 
 ···
+
 /**
  * isEmpty( Object obj )
  * 判断对象是否为空
  * @params obj
  */
- /** ex.(示例)
-  isEmpty( [] ) => true
+ 
+ /** 
+    ex.(示例)
+    isEmpty( [] ) => true
   */
+  
 var isEmpty = function( /*Object*/ obj ){
     /**
      * 1. 判断基本类型
@@ -37,6 +42,7 @@ var isEmpty = function( /*Object*/ obj ){
     var type = typeof obj;
     ...
 };
+
 ···
 
 ### 结尾“;”
@@ -58,7 +64,6 @@ if ( condition )
 if( condition ){
     statements;
 }
-
 ···
 
 
