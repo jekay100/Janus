@@ -68,6 +68,199 @@
     }
 ###
 
+不能省略{}, 即使再简单的代码
+
+###
+    /*bad*/
+    if( condition )
+        statements; 
+        
+    /*good*/
+    if( condition ){
+        statements; 
+    }
+###
+
+
+
+### 缩进与 Tab
+
+缩进的单位为四个空格;
+
+如果你使用Tab，请在IDE中设置 Tab 的宽度;
+
+### 每行长度
+
+避免每行超过80个字符。
+
+当一条语句一行写不下时,请考虑折行。
+
+在运算符号,最好是逗号后换行。
+
+在运算符后换行可以减少因为复制粘贴产生的错误被分号掩盖的几率。下一行应该缩进8个空格。
+
+###
+    /*bad*/
+    if( condition ){
+    statements;
+    }
+    
+    /*good*/
+    if( condition ){
+        statements;
+    }
+###
+
+### 引号
+
+在JS中使用单引号\';
+
+### 各种空格
+
+* 条件语句后空格
+>
+    if ( true ){
+        //...
+    }
+
+* "(" 右空格，"）" 左空格
+>
+    /*bad*/
+    if (true)
+    
+    /*good*/
+    if ( true )
+    
+* "{" 紧贴着“）”； "}" 前面空格或换行(与表达式头字母对齐)
+>
+    /*bad*/
+    if ( true ) {
+        //...}
+    
+    /*good*/
+    if ( true ){
+        //...
+    }
+    
+>> * 例外
+    return {
+        //...
+    };
+    
+* "," 后空格，前紧贴
+>
+    /*bad*/
+    var abc = function( a,b,c ){
+        //...
+    };
+    
+    var a,b,c;
+    
+    /*good*/
+    var abc = function( a,b,c ){
+            //...
+    };
+     
+    var a, b, c;
+    
+* ":" 后空格，前紧贴
+>
+    /*bad*/
+    var obj = {
+        'a':1,
+        'b':2
+    }
+    
+    /*good*/
+    var obj = {
+        'a': 1,
+        'b': 2
+    }
+
+    
+* ";" 紧贴无空格
+>
+    /*bad*/
+    var abc = function( a, b, c ){
+        //...
+    } ;
+    
+    var a, b, c ;
+    
+    /*good*/
+    var abc = function( a,b,c ){
+        //...
+    };
+    
+    var a, b, c;
+    
+* 运算符，比较符，赋值符 前后空格
+>
+    /*bad*/
+    var a=1;
+    if( a==1 ){
+        a = a+1;
+    }
+    
+    /*good*/
+    var a = 1;
+    if( a == 1 ){
+        a = a + 1;
+    }
+
+### "," 行末逗号
+>
+    /*bad*/
+    var a = 1
+      , b = 2
+      , c = 3;
+      
+    var obj = {
+        'a': 1
+      , 'b': 2
+      , 'c': 3
+    };
+      
+    /*good*/
+    var a = 1, 
+        b = 2 , 
+        c = 3;
+      
+    var obj = {
+        'a': 1, 
+        'b': 2, 
+        'c': 3
+    };
+
+### 参数赋值，单起一行
+    
+    /*bad*/
+    var a, b = 1, c;
+    
+    /*good*/
+    var a, c,
+        b = 1;
+    
+### 请习惯用（）表示运算的正确顺序
+
+    /*bad*/
+    5 || false == 5
+    
+    var a = 6 + + new Date();
+    
+    /*good*/
+    5 || ( false == 5 )
+    
+    var a = 6 + ( + new Date() );
+    
+
+
+
+## 编码规范
+----------
+
+
+
 
 
 
