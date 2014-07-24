@@ -7,10 +7,10 @@
 
 ```javascript
 
-(function( window, ng, undefined ){
-    'use strict';
-       
-})( window, angular );
+    (function( window, ng, undefined ){
+        'use strict';
+           
+    })( window, angular );
     
 ```
 
@@ -45,6 +45,8 @@
     
         //判断对象类型
         var type = typeof obj;
+        
+        //...
         
     };
 
