@@ -119,7 +119,7 @@
 
 >条件语句后空格
 
-```javascript
+>```javascript
 if ( true ){
     //...
 }
