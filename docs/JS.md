@@ -131,13 +131,15 @@
 ### 各种空格
 
 >条件语句后空格
->```javascript
+>
+```javascript
 
     if ( true ){
         //...
     }
     
->```
+```
+>
 
 >"(" 右空格，"）" 左空格
 >```javascript
