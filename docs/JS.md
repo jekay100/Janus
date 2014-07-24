@@ -55,12 +55,13 @@ var isEmpty = function( /*Object*/ obj ){
 结束 “}”要另起一行（不包括其他符号"],)"）
 
 ```
-/** bad */
+/*bad */
 
 if ( condition )
 { statements; }
 
-/** good */
+/*good */
+
 if( condition ){
     statements;
 }
