@@ -97,7 +97,7 @@
   <br/>It’s awesome!
 </p>
 ```
-* 优化标签。有些标签是不需要用到的，能少就少。可以参考HTML5 specification来知道哪些标签是必须的，哪些又是多余的。
+* 优化标签。有些标签是不需要用到的，能少就少。可以参考下方链接来知道哪些标签是必须的，哪些又是多余的。
 ```html
 <!-- Not recommended -->
 <!DOCTYPE html>
@@ -114,12 +114,15 @@
 <!DOCTYPE html>
 <title>Saving money, saving bytes</title>
 <p>Qed.</p>
-```
-* 省略<style>和<script>的type属性
 
-##HTML代码的格式化。
+```
+http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission
+
+* 省略<style>和<script>的type属性
+##关于HTML代码的格式化
 
 * 为每个块级元素或表格元素标签新起一行，并且对每个子元素进行缩进
+
 ```html
 
 <blockquote>
@@ -140,6 +143,7 @@
       <td>$ 5.00
       <td>$ 4.50
 </table>
+
 ```
 
 
