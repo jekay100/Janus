@@ -62,6 +62,7 @@
 
 <!-- 推荐 -->
 <a href="recommendations/">All recommendations</a>
+
 ```
 * 把多媒体元素可知化。像图片、视频、动画等多媒体元素，要有相关的文字来体现其内容，比如<img> 可以使用alt属性来说明图片内容。
 ```html
@@ -70,6 +71,7 @@
 
 <!-- 推荐 -->
 <img src="spreadsheet.png" alt="Spreadsheet screenshot.">
+
 ```
 * 确保页面的 结构、样式、行为三者相分离。确保文档或模板中只包含html，把用到的样式都写到样式表文件中，把脚本都写到js文件中。这在多人协作时非常重要。
 ```html
@@ -96,7 +98,9 @@
   my website that is presentational.
   <br/>It’s awesome!
 </p>
+
 ```
+* 省略<style>和<script>的type属性
 * 优化标签。有些标签是不需要用到的，能少就少。可以参考下方链接来知道哪些标签是必须的，哪些又是多余的。
 ```html
 <!-- Not recommended -->
@@ -118,7 +122,6 @@
 ```
 http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission
 
-* 省略<style>和<script>的type属性
 ##关于HTML代码的格式化
 
 * 为每个块级元素或表格元素标签新起一行，并且对每个子元素进行缩进
