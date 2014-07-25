@@ -100,7 +100,6 @@
 </p>
 
 ```
-* 省略<style>和<script>的type属性
 * 优化标签。有些标签是不需要用到的，能少就少。可以参考下方链接来知道哪些标签是必须的，哪些又是多余的。
 ```html
 <!-- Not recommended -->
@@ -121,8 +120,9 @@
 
 ```
 http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission
+* 省略&lt;style&gt;和&lt;script&gt;的type属性
 
-##关于HTML代码的格式化
+##HTML代码的格式化
 
 * 为每个块级元素或表格元素标签新起一行，并且对每个子元素进行缩进
 
