@@ -67,12 +67,12 @@ JavaScript程序编码规范
 
     /*bad*/
     
-    if ( condition )
+    if (condition)
     { statements; }
     
     /*good*/
     
-    if( condition ){
+    if(condition){
         statements;
     }
     
@@ -103,7 +103,7 @@ JavaScript程序编码规范
 
 ### 每行长度
 
-避免每行超过80个字符。
+避免每行超过120个字符。
 
 当一条语句一行写不下时,请考虑折行。
 
@@ -119,7 +119,7 @@ JavaScript程序编码规范
     }
     
     /*good*/
-    if( condition ){
+    if(condition){
         statements;
     }
     
@@ -135,22 +135,23 @@ JavaScript程序编码规范
 
 ```javascript
 
-    if ( true ){
+    if (true){
         //...
     }
     
 ```
 >
 
-* "(" 右空格，"）" 左空格
+* "(" 无空格，"）" 无空格
 
 ```javascript
 
     /*bad*/
-    if (true)
+    if ( true )
     
     /*good*/
-    if ( true )
+    if (true)
+    
     
 ```    
 
@@ -159,11 +160,11 @@ JavaScript程序编码规范
 ```javascript
 
     /*bad*/
-    if ( true ) {
+    if (true) {
         //...}
     
     /*good*/
-    if ( true ){
+    if (true){
         //...
     }
     
@@ -186,7 +187,7 @@ JavaScript程序编码规范
     var a,b,c;
     
     /*good*/
-    var abc = function( a,b,c ){
+    var abc = function( a, b, c ){
             //...
     };
      
@@ -224,7 +225,7 @@ JavaScript程序编码规范
     var a, b, c ;
     
     /*good*/
-    var abc = function( a,b,c ){
+    var abc = function( a, b, c ){
         //...
     };
     
@@ -238,13 +239,13 @@ JavaScript程序编码规范
 
     /*bad*/
     var a=1;
-    if( a==1 ){
+    if (a==1){
         a = a+1;
     }
     
     /*good*/
     var a = 1;
-    if( a == 1 ){
+    if (a == 1){
         a = a + 1;
     }
     
@@ -267,7 +268,7 @@ JavaScript程序编码规范
       
     /*good*/
     var a = 1, 
-        b = 2 , 
+        b = 2, 
         c = 3;
       
     var obj = {
@@ -290,7 +291,7 @@ JavaScript程序编码规范
         b = 1
         d = 2;
         
-    /*btter*/
+    /*better*/
     var a, c;
     var b = 1,
         d = 2;
@@ -307,7 +308,7 @@ JavaScript程序编码规范
     var a = 6 + + new Date();
     
     /*good*/
-    5 || ( false == 5 )
+    5 || (false == 5)
     
     var a = 6 + ( + new Date() );
     
