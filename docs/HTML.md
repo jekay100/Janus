@@ -39,7 +39,7 @@
 
 ##HTML书写规则
 
-* 文档类型。HTML5的文档类型对所有的html文档都适用：<!doctype html>。另外，最好使用html,而不是xhtml.
+* 文档类型。HTML5的文档类型对所有的html文档都适用：&lt;!doctype html&gt;。另外，最好使用html,而不是xhtml.
 
 * 使用规范化的html，并使用W3C HTML validator之类的工具来进行检测。
 ```html
