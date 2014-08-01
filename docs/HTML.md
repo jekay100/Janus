@@ -101,24 +101,6 @@
 
 ```
 * 优化标签。有些标签是不需要用到的，能少就少。可以参考下方链接来知道哪些标签是必须的，哪些又是多余的。
-```html
-<!-- Not recommended -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Spending money, spending bytes</title>
-  </head>
-  <body>
-    <p>Sic.</p>
-  </body>
-</html>
-
-<!-- Recommended -->
-<!DOCTYPE html>
-<title>Saving money, saving bytes</title>
-<p>Qed.</p>
-
-```
 http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission
 * 省略&lt;style&gt;和&lt;script&gt;的type属性
 
