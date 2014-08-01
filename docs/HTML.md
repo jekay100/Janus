@@ -114,19 +114,23 @@ http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-t
   <p><em>Space</em>, the final frontier.</p>
 </blockquote>
 <ul>
-  <li>Moe
-  <li>Larry
-  <li>Curly
+  <li>Moe</li>
+  <li>Larry</li>
+  <li>Curly</li>
 </ul>
 <table>
   <thead>
     <tr>
-      <th scope="col">Income
-      <th scope="col">Taxes
+      <th scope="col">Income</th>
+      <th scope="col">Taxes</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>$ 5.00
-      <td>$ 4.50
+      <td>$ 5.00</td>
+      <td>$ 4.50</td>
+    </tr>
+  </tbody>
 </table>
 
 ```
