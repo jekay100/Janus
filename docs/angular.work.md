@@ -68,7 +68,7 @@ Angular 工作原理
     通常通过setTimeout(0)实现，速度会比较慢，可能会出现视图抖动的问题）的，
     一个循环是处理watch列表（是一些表达式的集合，一旦有改变发生，那么watch函数就会被调用）的。
     digest循环会一直迭代知道evalAsync队列为空并且$watch列表也为空的时候，即model不再有任何变化。
-* 一旦AngularJS的$digest循环结束，整个执行就会离开AngularJS和Javascript的context，紧接着浏览器就会把数据改变后的视图重新渲染出来。
+* 一旦$digest循环结束，整个执行就会离开AngularJS和Javascript的context，紧接着浏览器就会把数据改变后的视图重新渲染出来。
 
 ###$digest 
 digest像是Angularjs的心跳,每隔50ms刷新一次,
@@ -110,4 +110,7 @@ Event Loop是一个程序结构，用于等待和发送消息和事件
 * digest循环开始，watch列表检测到name值的变化，然后通知{{name}}表达式，更新DOM；
 * 退出AngularJS的context，然后退出Javascript的context中的keydown事件；
 * 浏览器重新渲染视图。
+
+> 一旦AngularJS应用引导完毕，它将继续侦听浏览器的HTML触发事件，如鼠标点击事件、按键事件、HTTP传入响应等
+> 改变DOM模型的事件。这类事件一旦发生，AngularJS将会自动检测变化，并作出相应的处理及更新。
 
