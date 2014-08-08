@@ -22,7 +22,7 @@
 ```
 
 ##通用Meta规则
-* 确保你的IDE使用的是UTF-8编码来保存文件的，且不要带上BOM。在定义页面的编码时使用<meta charset="utf-8"> 就好了。在样式表文件里不用去声明UTF-8编码什么的。
+* 确保你的IDE使用的是UTF-8编码来保存文件的，在定义页面的编码时使用&lt;meta charset="utf-8"&gt; 就好了。在样式表文件里不用去声明UTF-8编码什么的。
 
 * 在需要地地方进行注释。
 
@@ -39,7 +39,7 @@
 
 ##HTML书写规则
 
-* 文档类型。HTML5的文档类型对所有的html文档都适用：<!doctype html>。另外，最好使用html,而不是xhtml.
+* 文档类型。HTML5的文档类型对所有的html文档都适用：&lt;!doctype html&gt;。另外，最好使用html,而不是xhtml.
 
 * 使用规范化的html，并使用W3C HTML validator之类的工具来进行检测。
 ```html
@@ -101,24 +101,6 @@
 
 ```
 * 优化标签。有些标签是不需要用到的，能少就少。可以参考下方链接来知道哪些标签是必须的，哪些又是多余的。
-```html
-<!-- Not recommended -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Spending money, spending bytes</title>
-  </head>
-  <body>
-    <p>Sic.</p>
-  </body>
-</html>
-
-<!-- Recommended -->
-<!DOCTYPE html>
-<title>Saving money, saving bytes</title>
-<p>Qed.</p>
-
-```
 http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission
 * 省略&lt;style&gt;和&lt;script&gt;的type属性
 
@@ -132,19 +114,23 @@ http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-t
   <p><em>Space</em>, the final frontier.</p>
 </blockquote>
 <ul>
-  <li>Moe
-  <li>Larry
-  <li>Curly
+  <li>Moe</li>
+  <li>Larry</li>
+  <li>Curly</li>
 </ul>
 <table>
   <thead>
     <tr>
-      <th scope="col">Income
-      <th scope="col">Taxes
+      <th scope="col">Income</th>
+      <th scope="col">Taxes</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>$ 5.00
-      <td>$ 4.50
+      <td>$ 5.00</td>
+      <td>$ 4.50</td>
+    </tr>
+  </tbody>
 </table>
 
 ```
