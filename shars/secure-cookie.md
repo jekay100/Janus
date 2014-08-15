@@ -36,5 +36,9 @@
 
 ##P3P cookie
 
-
-
+* Platform for Privacy Preferences
+* ie默认不允许第三域通过加载而设置另一方域的cookie
+* 如果响应头P3P字段，就可以设置第三域的cookie
+* 通过P3P设置的cookie拥有P3P属性
+* 发送的cookie如果是内存cookie则都会发送
+* 发送的cookie如果是本地cookie则只有带有P3P属性的cookie会发送
