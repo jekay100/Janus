@@ -16,7 +16,8 @@
 * [CSS最佳实践](https://github.com/HunterOn-Ued/Janus/blob/master/docs/CSS.bp.md)
 * [JAVASCRIPT最佳实践](https://github.com/HunterOn-Ued/Janus/blob/master/docs/JS.bp.md)
 
-
+### AngularJS测试
+[karma](https://github.com/HunterOn-Ued/Janus/tree/master/karma%5Bjasmine%5D)
 ##历史
 
 ##links
