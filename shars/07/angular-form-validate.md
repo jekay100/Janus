@@ -42,13 +42,15 @@ ex.
 <input type="text" ng-model="***" ng-pattern="/^\d+$/" />
 ```
 ###Url
+```HTML
 <input type="url" ng-model="***" />
+```
 
 ###Custome validations自定义验证
 
-####数据到视图的更新 
+#####数据到视图的更新 
     - NgModelController#$formatters
-####视图到数据的更新
+#####视图到数据的更新
     - NgModelController#$parsers
 
 ###获取表单状态
@@ -58,22 +60,22 @@ formName.inputFieldName.property
 
 /** Unmodified */
 
-formName.inputFiledName.$prostine
+formName.inputFiledName.$prostine [Boolean]
 
 /** Modified */
 
-formName.inputFiledName.$dirty
+formName.inputFiledName.$dirty [Boolean]
 
 /** Valid */
 
-formName.inputFiledName.$valid
+formName.inputFiledName.$valid [Boolean]
 
 /** Invalid */
 
-formName.inputFiledName.$invalid
+formName.inputFiledName.$invalid [Boolean]
 
 /** Errors */
 
-formName.inputFiledName.$error
+formName.inputFiledName.$error [Object]
 
 ```
